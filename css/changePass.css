@@ -1,0 +1,122 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Body styling for full-height centering and background gradient */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Main form container with soft shadows and smooth border radius */
+.main_content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-top: 500px;
+    margin-bottom: 100px;
+}
+
+.main_content:hover {
+    transform: translateY(-10px);
+}
+
+/* Heading styling with a sleek color palette */
+form h1 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Form group spacing */
+.newpass, .show {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label styling with modern typography */
+label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input fields with focus effect */
+input[type="password"], input[type="text"], input[type="tel"], #dropdown {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="password"]:focus {
+    border-color: #5a67d8;
+    background-color: #fff;
+}
+
+/* Modern button with hover effect and color transitions */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    background-color: #5a67d8;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #4c51bf;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkbox styling with spacing and modern appearance */
+.show {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .main_content {
+        padding: 30px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
