@@ -1,0 +1,96 @@
+/* Reset basic elements */
+* {
+    box-sizing: border-box; /* Ensure padding and border do not affect width */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Clean font for the body */
+    background-color: #f0f4f8; /* Light background color */
+    color: #333; /* Dark text color for contrast */
+}
+
+main {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full height of viewport */
+}
+
+.inquiry-container {
+    background: white; /* White background for the inquiry form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px; /* Padding inside the container */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Max width */
+    text-align: left; /* Left align text */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 2em; /* Larger font size for the title */
+    color: #007BFF; /* Blue color for the title */
+    text-align: center; /* Center title text */
+}
+
+label {
+    display: block; /* Make labels block-level */
+    margin: 10px 0 5px; /* Spacing for labels */
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below input fields */
+    font-size: 1em; /* Consistent font size */
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    background-color: #007BFF; /* Blue background for the button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Consistent font size */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for effects */
+    width: 100%; /* Full width for button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.form-buttons {
+    text-align: center; /* Center buttons */
+}
+
+.button-stack {
+    position: absolute;
+    top: 665px;
+    left: 835px;
+}
