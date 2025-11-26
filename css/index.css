@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    /* margin-top: 70px; Add 70px margin to include the header */
+}
+
+/* Image Slider */
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.slider-frame {
+    display: none; /* Initially hide all frames */
+    position: relative;
+}
+
+.slider-frame img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-content {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.text-content h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.text-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.text-content button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-content button:hover {
+    background-color: #0056b3;
+}
+
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+.dot.hover {
+    background-color: #3cb815;   
+}
+
+/* Categories Section */
+.categories {
+    margin: 40px 0;
+}
+
+.categories h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.app-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+.download-card, .game-card, .app-card {
+    background-color: rgb(236, 232, 227);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    flex: 1 1 calc(16.66% - 20px); 
+    max-width: calc(16.66% - 20px); 
+}
+
+
+.download-card:hover,
+.game-card:hover,
+.app-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.download-card img,
+.game-card img,
+.app-card img {
+    width: 100%;
+    height: auto;
+}
+
+.download-card h4,
+.game-card h4,
+.app-card h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.download-card p,
+.game-card p,
+.app-card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.bx {
+    color: #ffcc00; /* Star color */
+}
+
+
