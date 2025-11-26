@@ -1,0 +1,100 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    align-items: center;
+    height: 100vh;
+    margin: 10px;
+}
+
+.user_card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 40px;
+}
+
+.user-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+    transform: scale(1.05); /* Adds hover effect */
+}
+
+/* Header Styling */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Content Styling */
+.content {
+    padding: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.info-row label {
+    font-weight: bold;
+    color: #555;
+}
+
+.info-row .info {
+    color: #333;
+}
+
+/* Sign Out Button Styling */
+.signout-section {
+    text-align: center;
+}
+
+.signout-btn {
+    background-color: #ff4b5c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.signout-btn:hover {
+    background-color: #ff2b3c;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .user-card {
+        width: 100%;
+    }
+
+    .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-row .info {
+        margin-top: 5px;
+    }
+}
