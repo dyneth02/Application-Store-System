@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee5e5;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: #070707;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 28px;
+    margin-right: 5px;
+    color: #3cb815;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 25px;
+    position: relative;
+}
+
+.menu ul li a {
+    color: #0f0e0e;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.menu ul li a.active,
+.menu ul li a:hover {
+    background-color: #3cb815;
+    border-radius: 15px;
+    color: #e6dede;
+}
+
+/* Support Dropdown */
+ul li ul.dropdown li {
+    display: block;
+    padding: 5px 5px;
+    
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: #eee5e5;
+    box-shadow: 2px 2px 5px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: #3cb815;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+    width: 200px;
+}
+
+.search-bar i {
+    color: #333;
+    font-size: 20px;
+}
+
+/* notifications */ 
+.notifications {
+    font-size: 25px;
+}
+.notifications i{
+    color: #070707;
+}
+
+/* Login,Sign Up Buttons */
+.btn button {
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn button:hover {
+    background-color: #3cb815;
+    color: #eee5e5;
+}
+
+.profile_section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.profile_img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile_img::after {
+    content: "Profile";
+    position: absolute;
+    right: 20px; /* Adjust to position relative to the image */
+    top: 40px;    /* Adjust to show below the image */
+    background: #787777;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevents text wrapping */
+    opacity: 0;
+    transition: opacity 0.3s; /* Smooth fade-in effect */
+    pointer-events: none; /* Ensures tooltip doesn't interfere with hover */
+}
+
+.profile_img:hover::after {
+    opacity: 1; /* Tooltip becomes visible on hover */
+}
+
+
