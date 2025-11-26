@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Gradient background */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean font */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full height */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column;
+}
+
+.container {
+    background: rgba(15, 32, 39, 0.7); /* Dark transparent background */
+    backdrop-filter: blur(15px); /* Apply blur effect */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px; /* Padding inside the container */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); /* Strong shadow for depth */
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Max width */
+    text-align: center; /* Center text */
+}
+
+h1 {
+    margin-bottom: 20px; /* Spacing below the title */
+    font-size: 2.5em; /* Larger font for the title */
+    text-transform: uppercase; /* Uppercase for a modern feel */
+}
+
+label {
+    font-weight: bold; /* Bold labels for clarity */
+    margin-bottom: 5px; /* Spacing below labels */
+    display: block; /* Make labels block level */
+}
+
+textarea {
+    width: 100%; /* Full width */
+    padding: 15px; /* Padding for textarea */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Light background with transparency */
+    resize: none; /* Disable resizing */
+    margin-bottom: 20px; /* Spacing below textarea */
+    color: #fff; /* White text in textarea */
+    font-size: 1em; /* Consistent font size */
+    transition: background 0.3s; /* Transition for background change */
+}
+
+textarea:focus {
+    background: rgba(255, 255, 255, 0.3); /* Change background on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    background: linear-gradient(90deg, #00c6ff, #0072ff); /* Gradient button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.2em; /* Slightly larger font size */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for effects */
+    margin-top: 10px; /* Space above button */
+}
+
+button:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 5px 20px rgba(0, 124, 255, 0.5); /* Shadow on hover */
+}
+
+h2 {
+    margin-top: 40px; /* Space above feedback title */
+    font-size: 1.5em; /* Font size for feedback title */
+}
+
+#feedbackList {
+    margin-top: 20px; /* Space above feedback list */
+    color: #e0e0e0; /* Lighter text for feedback */
+    text-align: left; /* Align feedback text left */
+}
