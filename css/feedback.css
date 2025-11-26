@@ -1,0 +1,81 @@
+/* Reset some basic elements */
+* {
+    box-sizing: border-box; /* Ensure padding and borders do not affect width */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Clean font */
+    background-color: #f4f7f9; /* Light background color */
+    color: #333; /* Dark text color for contrast */
+    height: 100vh; /* Full height */
+    display: grid; /* Use grid layout for centering */
+    place-items: center; /* Center items in grid */
+    gap: 40px;
+}
+
+.container {
+    background: white; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px; /* Padding inside the container */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Max width */
+    text-align: center; /* Center text */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 2em; /* Larger font size */
+    color: #007BFF; /* Blue color for the title */
+}
+
+label {
+    display: block; /* Make labels block level */
+    margin: 10px 0 5px; /* Spacing for labels */
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+input[type="text"], textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below input fields */
+    font-size: 1em; /* Consistent font size */
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    background-color: #007BFF; /* Blue background for the button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Consistent font size */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for effects */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+h2 {
+    margin-top: 40px; /* Space above the feedback title */
+    font-size: 1.5em; /* Font size for feedback title */
+    color: #007BFF; /* Blue color for the feedback title */
+}
+
+#feedbackList {
+    margin-top: 20px; /* Space above feedback list */
+    color: #555; /* Lighter text for feedback */
+    text-align: left; /* Align feedback text left */
+}
