@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-page {
+    width: 80%;
+    max-width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* App Header Section */
+.app-header {
+    display: flex;
+    gap: 20px;
+}
+
+.app-logo {
+    width: 150px;
+    height: 155px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.app-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app-details {
+    flex: 1;
+}
+
+.app-details h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.app-developer {
+    font-size: 16px;
+    color: blue;
+}
+
+.app-meta {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.app-meta div {
+    display: flex;
+    align-items: center;
+}
+
+.app-meta span {
+    margin-right: 5px;
+}
+
+/* Install Button */
+.install-btn {
+    display: block;
+    margin: 5px 0;
+    padding: 15px 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Screenshots Section */
+.screenshots {
+    margin-top: 30px;
+}
+
+.screenshots h2 {
+    margin-bottom: 15px;
+}
+
+.screenshot-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.screenshot {
+    width: 260px;
+    height: 550px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    
+}
+.screenshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+/* About Section */
+.about {
+    margin-top: 40px;
+}
+
+.about p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Rate the App Section */
+.rate-app {
+    margin-top: 40px;
+}
+
+.rate-app h2 {
+    margin-bottom: 10px;
+}
+
+.rate-app .stars {
+    font-size: 24px;
+    color: #FFD700;
+}
+
+.write-review {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+}
